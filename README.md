@@ -23,9 +23,10 @@ In this work, we propose Sdirt based on ray tracing to to bridge this domain gap
 # Citations
 If our code helps your research or work, please consider citing our paper. The following are BibTeX references:
 
-@article{he2025Simulating,
+```bibtex
+@article{he2025simulating,
   title={Simulating Dual-Pixel Images From Ray Tracing For Depth Estimation},
-  author={Fengchen He, Dayang Zhao, Hao Xu, Tingwei Quan, Shaoqun Zeng},
+  author={He, Fengchen and Zhao, Dayang and Xu, Hao and Quan, Tingwei and Zeng, Shaoqun},
   journal={arXiv preprint arXiv:2503.11213},
   year={2025}
 }
