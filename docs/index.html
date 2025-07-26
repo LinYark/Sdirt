@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Project Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    a {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 960px;
+      margin: 60px auto 120px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+      line-height: 1.1;
+      color: #111;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0 0 2rem;
+      color: #444;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 0 0 2rem;
+      color: #444;
+    }
+    .abstract h3 {
+      margin-bottom: 0.4em;
+      margin-top: 0; 
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: #222;
+    }
+
+    .abstract {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 1.125rem;
+      color: #333;
+      margin-bottom: 4rem;
+    }
+
+    .btn-group {
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background-color: #444; /* 深灰 */
+      color: #eee;
+      padding: 0.85rem 1.8rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      user-select: none;
+    }
+    .btn:hover {
+      background-color: #666; /* 浅灰 */
+      color: #fff;
+    }
+    .btn:focus-visible {
+      outline: 2px solid #999;
+      outline-offset: 3px;
+    }
+    .juxtapose {
+      width: 100%;
+      max-width: 960px;
+      height: 420px;
+      margin: 0 auto 6rem;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
+    }
+    .media-section {
+      margin-bottom: 6rem;
+      text-align: left;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .media-section h3 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+    .media-section img,
+    .media-section video {
+      width: 100%;
+      max-width: 960px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    section#citation {
+      max-width: 960px;
+      margin: 0 auto 80px;
+      padding: 2rem 1rem;
+      border-top: 1px solid #ddd;
+      text-align: left;
+      color: #444;
+      font-family: 'Georgia', serif;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    section#citation h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #222;
+      text-align: center;
+    }
+    section#citation pre {
+      background: #f9f9f9;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      border: 1px solid #eee;
+      overflow-x: auto;
+      font-family: 'Courier New', Courier, monospace;
+      white-space: pre-wrap;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 80px;
+      margin-bottom: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    .break-line {
+      display: inline-block; 
+      clear: left;           
+      margin-left: 0;        
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .abstract {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+      .juxtapose {
+        height: 320px;
+        max-width: 100%;
+      }
+      .media-section {
+        max-width: 100%;
+      }
+      .media-section img,
+      .media-section video {
+        max-width: 100%;
+      }
+      section#citation {
+        max-width: 100%;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Simulating Dual-Pixel Images From Ray Tracing For Depth Estimation</h1>
+    <h2>
+      <a href="https://linyark.github.io/" target="_blank" rel="noopener noreferrer"><span class="underline">Fengchen He</span></a>,
+      Dayang Zhao, Hao Xu, Tingwei Quan, Shaoqun Zeng <br>
+      HUST, China <br>
+    </h2>
+    <h3 style="text-align:center; color:#ff6600; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+       Accepted by ✨ ICCV 2025 ✨ <br> See you in Hawaii 🌺
+    </h3>
+
+    <div class="btn-group">
+        <a href="https://arxiv.org/abs/2503.11213" target="_blank" class="btn" rel="noopener noreferrer" aria-label="arXiv Link">
+        📚 arXiv
+      </a>
+      <a class="btn disabled" aria-disabled="true" title="Coming soon">        
+        📄 Paper
+      </a>
+      <a class="btn disabled" aria-disabled="true" title="Coming soon">        
+        🧾 Supp
+      </a>
+      <a href="https://github.com/LinYark/Sdirt" target="_blank" class="btn break-line" rel="noopener noreferrer" aria-label="Code Repository">
+        🔗 Github
+      </a>
+    </div>
+
+    <section class="abstract" aria-label="Abstract">
+      <h3>News</h3>
+      <p>
+      We are actively preparing the project page, code release, and camera-ready version. <br>
+      The content and images below are placeholders for now — thank you for your patience!
+      </p>
+    </section>
+
+    <section class="abstract" aria-label="Abstract">
+      <h3>TL; DR:</h3>
+      <p>
+      Simulated DP images can address the scarcity of DP-depth paired data but face a domain gap between simulated and real DP data. <br>
+      In this work, we propose Sdirt based on ray tracing to to bridge this domain gap!
+      </p>
+    </section>
+
+    <section class="abstract" aria-label="Abstract">
+      <h3>Abstract</h3>
+      <p>
+Many studies utilize dual-pixel (DP) sensor phase information for various applications, such as depth estimation and deblurring.
+However, since DP image features are entirely determined by the camera hardware, 
+DP-depth paired datasets are very scarce, especially when performing depth estimation on customized cameras.
+To overcome this, studies simulate DP images using ideal optical models.
+However, these simulations often violate real optical propagation laws,
+leading to poor generalization to real DP data.
+To address this, we investigate the domain gap between simulated and real DP data, 
+and propose solutions using the Simulating DP Images from Ray Tracing (Sdirt) scheme.
+Sdirt generates realistic DP images via ray tracing and integrates them into the depth estimation training pipeline.
+Experimental results show that models trained with Sdirt-simulated images
+generalize better to real DP data.
+      </p>
+    </section>
+
+
+    <section class="media-section" aria-label="Image examples">
+      <h3>Example Image 2</h3>
+      <img src="../images/main.png" alt="Example 2 visualization" />
+      <p class="media-caption">xx.</p>
+    </section>
+
+    <section aria-label="Visual Comparison">
+      <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="Ground Truth" data-label2="Our Result">
+        <img src="../images/xx.png" alt="Ground Truth" />
+        <img src="../images/xx.png" alt="Our Result" />
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples">
+      <h3>Example Image 1</h3>
+      <img src="../images/xx.png" alt="Example 1 visualization" />
+      <p class="media-caption">xx.</p>
+      <br>
+      <h3>Example Image 2</h3>
+      <img src="../images/xx.png" alt="Example 2 visualization" />
+      <p class="media-caption">xx.</p>
+    </section>
+
+    <br>
+
+    <section class="media-section" aria-label="Video examples">
+      <h3>Video Demonstration 1</h3>
+      <video controls preload="metadata" aria-describedby="caption1" >
+        <source src="videos/demo1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p id="caption1" class="media-caption">xx.</p>
+
+      <h3>Video Demonstration 2</h3>
+      <video controls preload="metadata" aria-describedby="caption2" >
+        <source src="videos/demo2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p id="caption2" class="media-caption">xx.</p>
+    </section>
+
+    <section id="citation" aria-label="References">
+      <h2>BibTeX</h2>
+      <pre><code>
+@article{he2025simulating,
+  title={Simulating Dual-Pixel Images From Ray Tracing For Depth Estimation},
+  author={He, Fengchen and Zhao, Dayang and Xu, Hao and Quan, Tingwei and Zeng, Shaoqun},
+  journal={arXiv preprint arXiv:2503.11213},
+  year={2025}
+}
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    © 2025
+    <a href="https://linyark.github.io/" target="_blank" rel="noopener noreferrer" style="color: #555; text-decoration: none;">
+      LinYark
+    </a>
+    — Built with HTML & JuxtaposeJS & ChatGPT
+    <br>
+    This work was supported by National Natural Science Foundation of China (Grant No. 32471146) and the project N20240194.
+    <br>
+    The authors thank Echossom, Miya, and Xinge for valuable discussions and assistance. 
+  </footer>
+
+  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+</body>
+</html>
