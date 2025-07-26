@@ -10,16 +10,16 @@
     <a href="https://arxiv.org/abs/2503.11213" target="_blank" rel="noopener noreferrer">
       📚 arXiv
     </a> &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="./docs/papers/Sdirt_main.pdf" target="_blank" rel="noopener noreferrer">
       📄 Paper
     </a> &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="./docs/papers/Sdirt_supp.pdf" target="_blank" rel="noopener noreferrer">
       🧾 Supp
     </a> &nbsp;&nbsp;|&nbsp;&nbsp;
     <!-- <a href="#" target="_blank" rel="noopener noreferrer">
       📦 Dataset
     </a> &nbsp;&nbsp;|&nbsp;&nbsp; -->
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="https://linyark.github.io/Sdirt" target="_blank" rel="noopener noreferrer">
       🔗 Project
     </a>
   </p>
