@@ -219,13 +219,13 @@
     </h3>
 
     <div class="btn-group">
-        <a href="https://arxiv.org/abs/2503.11213" target="_blank" class="btn" rel="noopener noreferrer" aria-label="arXiv Link">
+      <a href="https://arxiv.org/abs/2503.11213" target="_blank" class="btn" rel="noopener noreferrer" aria-label="arXiv Link">
         📚 arXiv
       </a>
-      <a class="btn disabled" aria-disabled="true" title="Coming soon">        
+      <a href="https://linyark.github.io/Sdirt/papers/Sdirt_main.pdf" target="_blank" class="btn" rel="noopener noreferrer" aria-label="Paper PDF" title="Open Paper">
         📄 Paper
       </a>
-      <a class="btn disabled" aria-disabled="true" title="Coming soon">        
+      <a href="https://linyark.github.io/Sdirt/papers/Sdirt_supp.pdf" target="_blank" class="btn" rel="noopener noreferrer" aria-label="Supplementary Material" title="Open Supplementary">
         🧾 Supp
       </a>
       <a href="https://github.com/LinYark/Sdirt" target="_blank" class="btn break-line" rel="noopener noreferrer" aria-label="Code Repository">
@@ -233,80 +233,259 @@
       </a>
     </div>
 
-    <section class="abstract" aria-label="Abstract">
+    <!-- <section class="abstract" aria-label="Abstract">
       <h3>News</h3>
-      <p>
-      We are actively preparing the project page, code release, and camera-ready version. <br>
-      The content and images below are placeholders for now — thank you for your patience!
-      </p>
-    </section>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        We are actively preparing the project page, code release, and camera-ready version. <br>
+        The content and images below are placeholders for now — thank you for your patience!
+      </div>
+    </section> -->
 
-    <section class="abstract" aria-label="Abstract">
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 1em;">
       <h3>TL; DR:</h3>
-      <p>
-      Simulated DP images can address the scarcity of DP-depth paired data but face a domain gap between simulated and real DP data. <br>
-      In this work, we propose Sdirt based on ray tracing to to bridge this domain gap!
-      </p>
-    </section>
-
-    <section class="abstract" aria-label="Abstract">
-      <h3>Abstract</h3>
-      <p>
-Many studies utilize dual-pixel (DP) sensor phase information for various applications, such as depth estimation and deblurring.
-However, since DP image features are entirely determined by the camera hardware, 
-DP-depth paired datasets are very scarce, especially when performing depth estimation on customized cameras.
-To overcome this, studies simulate DP images using ideal optical models.
-However, these simulations often violate real optical propagation laws,
-leading to poor generalization to real DP data.
-To address this, we investigate the domain gap between simulated and real DP data, 
-and propose solutions using the Simulating DP Images from Ray Tracing (Sdirt) scheme.
-Sdirt generates realistic DP images via ray tracing and integrates them into the depth estimation training pipeline.
-Experimental results show that models trained with Sdirt-simulated images
-generalize better to real DP data.
-      </p>
-    </section>
-
-
-    <section class="media-section" aria-label="Image examples">
-      <h3>Example Image 2</h3>
-      <img src="../images/main.png" alt="Example 2 visualization" />
-      <p class="media-caption">xx.</p>
-    </section>
-
-    <section aria-label="Visual Comparison">
-      <div class="juxtapose" data-startingposition="50%" data-showlabels="true" data-label="Ground Truth" data-label2="Our Result">
-        <img src="../images/xx.png" alt="Ground Truth" />
-        <img src="../images/xx.png" alt="Our Result" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        Simulated DP images can address the scarcity of DP-depth paired data but face a domain gap between simulated and real DP data. <br>
+        In this work, we propose Sdirt based on ray tracing to to bridge this domain gap!
       </div>
     </section>
 
-    <section class="media-section" aria-label="Image examples">
-      <h3>Example Image 1</h3>
-      <img src="../images/xx.png" alt="Example 1 visualization" />
-      <p class="media-caption">xx.</p>
-      <br>
-      <h3>Example Image 2</h3>
-      <img src="../images/xx.png" alt="Example 2 visualization" />
-      <p class="media-caption">xx.</p>
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h3>Abstract</h3>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        Many studies utilize dual-pixel (DP) sensor phase information for various applications, such as depth estimation and deblurring.
+        However, since DP image features are entirely determined by the camera hardware, 
+        DP-depth paired datasets are very scarce, especially when performing depth estimation on customized cameras.
+        To overcome this, studies simulate DP images using ideal optical models.
+        However, these simulations often violate real optical propagation laws,
+        leading to poor generalization to real DP data.
+        To address this, we investigate the domain gap between simulated and real DP data, 
+        and propose solutions using the Simulating DP Images from Ray Tracing (Sdirt) scheme.
+        Sdirt generates realistic DP images via ray tracing and integrates them into the depth estimation training pipeline.
+        Experimental results show that models trained with Sdirt-simulated images
+        generalize better to real DP data.
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">What is the DP Image?</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+        <img src="../images/i1.gif" alt="Left View Example" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="../images/i2.gif" alt="Right View Example" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="../images/i3.gif" alt="Defocus Left" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="../images/i4.gif" alt="Defocus Right" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+      </div>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        <strong>Key characteristics of DP images:</strong><br>
+        • Each DP pixel is vertically split into two sub-pixels, producing a pair of left and right views from a single frame.<br>
+        • A slight disparity exists between the left and right views in defocused regions, with opposite directions for front- and back-focused objects.<br>
+        • Due to lens aberrations and sensor phase splitting, the left-right views often exhibit asymmetric patterns.<br>
+        • The disparity is aperture-dependent: it is noticeable at wide apertures (e.g., F/4) but negligible at narrow apertures (e.g., F/20).<br>
+        (Best viewed in color and enlarge on screen.)
+      </div>
     </section>
 
     <br>
 
-    <section class="media-section" aria-label="Video examples">
-      <h3>Video Demonstration 1</h3>
-      <video controls preload="metadata" aria-describedby="caption1" >
-        <source src="videos/demo1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <p id="caption1" class="media-caption">xx.</p>
-
-      <h3>Video Demonstration 2</h3>
-      <video controls preload="metadata" aria-describedby="caption2" >
-        <source src="videos/demo2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <p id="caption2" class="media-caption">xx.</p>
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Motivation</h3>
+      <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <img src="../images/i1.png" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+          <strong>(a)</strong> Imaging process of a DP camera. The slight shifts between the left and right DP images caused by phase differences are illustrated with white dashed lines.<br><br>
+          <strong>(b)</strong> Example comparison between real and CoC-simulated DP PSFs, showing a significant difference between them.<br><br>
+          Simulated DP PSFs and images generated by existing models exhibit significant discrepancies from real captured modalities, mainly due to their neglect of lens aberrations and the phase-splitting characteristics of the sensor.
+        </div>
+      </div>
     </section>
+
+    <br>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
+      <h3>Contributions</h3>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+      <strong>Our contributions are fourfold:</strong><br>
+      •  We propose a ray-traced DP PSF simulator that computes spatially varying DP PSFs, addressing the domain gap between simulated and real DP PSFs caused by lens aberrations and sensor phase splitting.<br>
+      •  We propose a pixel-wise DP image rendering module that uses an MLP to predict the DP PSF for each pixel, narrowing the gap between simulated and real DP images.<br>
+      •  Depth estimation results show that the DfDP model trained on Sdirt generalizes better to real DP images.<br>
+      •  We collected DP119, a real DP-depth paired test set with an open lens structure and fixed focus, featuring diverse real-world scenes.<br>
+      </div>
+    </section>
+    
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Method</h3>
+      <img src="../images/m1.png" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        <strong>Simulating Dual-Pixel Images from Ray Tracing pipeline. </strong><br>
+        (a) Ray-traced DP PSF simulator. Calculates spatially varying DP PSFs for lens and DP sensor through ray tracing.<br>
+        (b) DP PSF prediction network. Trains an MLP network to predict DP PSFs, using the ray-traced DP PSFs as GT.<br>
+        (c) Pixel-wise DP image rendering module. The network predicts the DP PSFs for all points in the depth map (red pass). <br>
+        Then, each DP PSF is convolved with the AiF RGB image to render the simulated DP image (blue pass). <br>
+      </div>
+      <br>
+      <img src="../images/m2.png" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        <strong>Overview of ray tracing on the lens and DP sensor.</strong><br>
+        (a) Ray tracing on the lens.  
+        (b) Ray tracing on the DP sensor.
+      </div>
+    </section>
+
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of simulated DP PSFs.</h3>
+      <img src="../images/e1.png" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        We evaluate real and simulated DP PSFs (ours, CoC, L2R [Abuolaim et al. 2021], Modeling [Punnappurath et al. 2020], and DDDNet [Pan et al. 2021]) under an F/1.8 aperture at two depths (0.5 m and 1.5 m) and three different lateral positions.<br>
+        As the object point <em>p</em> moves further from the optical axis, the real <em>PSF<sub>L</sub></em> and <em>PSF<sub>R</sub></em> become increasingly phase-asymmetric, and aberrations are more pronounced.<br>
+        Existing simulators neglect both aberrations and dual-pixel phase splitting, leading to a large gap between simulated and real DP PSFs.
+        Only our ray-traced simulator produces realistic results across all tested depths and positions.
+      </div>
+      <br>
+      <img src="../images/e1_1.png" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        We select 5 points within the valid imaging region, and only their x-coordinates increase sequentially, corresponding to (a)–(e).
+        We provide not only the comparison results of real and our ray-traced DP PSFs for these 5 points,
+        but also present the pixel distribution curves for the central row. <br>
+        As the object point <em>p</em> moves farther away from the optical axis, the real PSF<sub>L</sub> and PSF<sub>R</sub> become more phase asymmetric.
+        Our simulated DP PSFs, obtained through ray tracing, align well with the real DP PSFs.
+      </div>
+
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of simulated DP images.</h3>
+      <img src="../images/e2.jpg" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        We evaluate the similarity between simulated and real F/4 defocused left DP images at two depths (0.5 m and 2 m).<br>
+        Compared to real F/4 defocused images, images simulated by other methods exhibit varying pattern sizes, incomplete shapes, and texture shifts in different directions before and after the focus distance (1 m).
+        Our method produces the most realistic simulated images.
+      </div>
+        <br>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 10px; max-width: 900px; margin: 0 auto;">
+          <video src="../images/videos/1_Real L vs Our simulated L.mp4"       controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="../images/videos/2_Real L vs COC simulated L.mp4"       controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="../images/videos/3_Real L vs DDDNet simulated  L.mp4"   controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="../images/videos/4_Real L vs L2R simulated  L.mp4"      controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="../images/videos/5_Real L vs Modeling simulated  L.mp4" controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+      </div>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        We provide comparison videos of real vs. simulated F/4 defocused left DP images at 0.5 m.<br>
+        Other methods' simulated images exhibit significant domain gaps that are visually apparent, whereas our method produces the most realistic simulations.
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 5em;">
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of absolute depth estimation.</h3>
+      <img src="../images/e3.jpg" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        We evaluate DfDP models with CoC, L2R, Modeling, DDDNet, and our Sdirt on four casual scenes.
+        Each result image includes a color bar indicating depth in meters.<br>
+        Their depth estimation results show partial accuracy in relative positional relationships but suffer from large absolute positional errors.<br>
+        Our depth estimation results demonstrate high accuracy in both relative and absolute positions, with minimal errors.<br>
+        (Best viewed in color and enlarged on screen.)
+      </div>
+      <br>
+      <img src="../images/e3_1.jpg" alt="Example 2 visualization" />
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+        Evaluate DfDP models with L2R, Modeling, DDDNet, and our Sdirt on various DP119 dataset scenes.
+        Each result image is decorated with a color bar indicating depth in meters.<br>
+        Their depth estimation results show partial accuracy in relative positional relationships but large absolute positional errors.<br>
+        Our depth estimation results, however, demonstrate accuracy in both relative and absolute positions with minimal errors.<br>
+        Furthermore, textureless areas lead to degradation in all models. (Best viewed in color and enlarged on screen.)
+      </div>
+    </section>
+
+    <!-- ################# -->
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h3>Exploratory Ideas (Unverified and Not in Paper).</h3>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+      The following are potential directions we are currently exploring. <br>
+      These ideas have not been experimentally validated or included in the ICCV 2025 paper. <br>
+      They are presented here solely to illustrate future possibilities.
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h4>Possible quad-pixel (QP) structure layout</h4>
+      <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <img src="../images/q-pd/m1.png" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+          <strong>(a)</strong> Tightly Packed Quad-Pixel Layout with four sub-pixels: Left-Top (LT), Left-Bottom (LB), Right-Top (RT), and Right-Bottom (RB).
+          <br><br>
+          <strong>(b)</strong> Symmetrically Gapped Quad-Pixel Layout where the four sub-pixels (LT, LB, RT, RB) are arranged with equal spacing between them.
+          <br><br>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h4>Ray-traced QP PSFs</h4>
+      <img src="../images/q-pd/m2.png" alt="Example 2 visualization" />
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h4>Ray-traced QP unit images</h4>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; font-family: sans-serif; text-align: center;">
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(a) Raw image</div>
+          <img src="../images/q-pd/raw.jpg" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(b) Bayer pattern image</div>
+          <img src="../images/q-pd/bayer.jpg" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(c) Demosaic image</div>
+          <img src="../images/q-pd/demosaic.jpg" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h4>Ray-traced QP sub-images with vignetting</h4>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; font-family: sans-serif; text-align: center;">
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(a) LT image</div>
+          <img src="../images/q-pd/lt.png" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(b) LB image</div>
+          <img src="../images/q-pd/lb.png" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(c) RT image</div>
+          <img src="../images/q-pd/rt.png" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(d) RB image</div>
+          <img src="../images/q-pd/rb.png" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; font-family: sans-serif; text-align: center;">
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(d) LT v.s. LB</div>
+          <img src="../images/q-pd/lt_vs_lb.gif" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+        <div>
+          <div style="font-weight: bold; margin-bottom: 8px;">(e) LB v.s. RB</div>
+          <img src="../images/q-pd/lb_vs_rb.gif" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+        </div>
+      </div>
+    </section>
+
+    <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
+      <h4>A Personal Note</h4>
+      <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+      Dear readers:<br><br>
+      Optical simulation itself is not the hard part — the real obstacle lies in the lack of openness from camera, smartphone, lens, and sensor manufacturers regarding optical element specifications and ISP pipelines. <br>
+      If you are an industry insider with access to such parameters, and you need simulations to generate large-scale synthetic data or to verify component feasibility in advance — or if there is any way I can assist you — please feel free to contact me. <br>
+      I also urgently need your support by providing real optical system data to help me build accurate simulators.<br><br>
+      Thank you in advance,<br>
+      LinYark
+      </div>
+    </section>
+
+    <!-- ###################### -->
 
     <section id="citation" aria-label="References">
       <h2>BibTeX</h2>
@@ -319,6 +498,11 @@ generalize better to real DP data.
 }
       </code></pre>
     </section>
+
+
+
+
+
   </main>
 
   <footer>
