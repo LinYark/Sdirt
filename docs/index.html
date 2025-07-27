@@ -269,10 +269,10 @@
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
       <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">What is the DP Image?</h3>
       <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
-        <img src="../images/i1.gif" alt="Left View Example" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
-        <img src="../images/i2.gif" alt="Right View Example" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
-        <img src="../images/i3.gif" alt="Defocus Left" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
-        <img src="../images/i4.gif" alt="Defocus Right" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="./images/i1.gif" alt="Left View Example" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="./images/i2.gif" alt="Right View Example" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="./images/i3.gif" alt="Defocus Left" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="./images/i4.gif" alt="Defocus Right" style="width: 48%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
       </div>
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         <strong>Key characteristics of DP images:</strong><br>
@@ -289,7 +289,7 @@
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
       <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Motivation</h3>
       <div style="display: flex; gap: 20px; align-items: flex-start;">
-        <img src="../images/i1.png" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="./images/i1.png" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
         <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
           <strong>(a)</strong> Imaging process of a DP camera. The slight shifts between the left and right DP images caused by phase differences are illustrated with white dashed lines.<br><br>
           <strong>(b)</strong> Example comparison between real and CoC-simulated DP PSFs, showing a significant difference between them.<br><br>
@@ -313,7 +313,7 @@
     
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
       <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Method</h3>
-      <img src="../images/m1.png" alt="Example 2 visualization" />
+      <img src="./images/m1.png" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         <strong>Simulating Dual-Pixel Images from Ray Tracing pipeline. </strong><br>
         (a) Ray-traced DP PSF simulator. Calculates spatially varying DP PSFs for lens and DP sensor through ray tracing.<br>
@@ -322,7 +322,7 @@
         Then, each DP PSF is convolved with the AiF RGB image to render the simulated DP image (blue pass). <br>
       </div>
       <br>
-      <img src="../images/m2.png" alt="Example 2 visualization" />
+      <img src="./images/m2.png" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         <strong>Overview of ray tracing on the lens and DP sensor.</strong><br>
         (a) Ray tracing on the lens.  
@@ -333,7 +333,7 @@
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
       <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of simulated DP PSFs.</h3>
-      <img src="../images/e1.png" alt="Example 2 visualization" />
+      <img src="./images/e1.png" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         We evaluate real and simulated DP PSFs (ours, CoC, L2R [Abuolaim et al. 2021], Modeling [Punnappurath et al. 2020], and DDDNet [Pan et al. 2021]) under an F/1.8 aperture at two depths (0.5 m and 1.5 m) and three different lateral positions.<br>
         As the object point <em>p</em> moves further from the optical axis, the real <em>PSF<sub>L</sub></em> and <em>PSF<sub>R</sub></em> become increasingly phase-asymmetric, and aberrations are more pronounced.<br>
@@ -341,7 +341,7 @@
         Only our ray-traced simulator produces realistic results across all tested depths and positions.
       </div>
       <br>
-      <img src="../images/e1_1.png" alt="Example 2 visualization" />
+      <img src="./images/e1_1.png" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         We select 5 points within the valid imaging region, and only their x-coordinates increase sequentially, corresponding to (a)–(e).
         We provide not only the comparison results of real and our ray-traced DP PSFs for these 5 points,
@@ -354,7 +354,7 @@
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 3em;">
       <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of simulated DP images.</h3>
-      <img src="../images/e2.jpg" alt="Example 2 visualization" />
+      <img src="./images/e2.jpg" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         We evaluate the similarity between simulated and real F/4 defocused left DP images at two depths (0.5 m and 2 m).<br>
         Compared to real F/4 defocused images, images simulated by other methods exhibit varying pattern sizes, incomplete shapes, and texture shifts in different directions before and after the focus distance (1 m).
@@ -362,11 +362,11 @@
       </div>
         <br>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 10px; max-width: 900px; margin: 0 auto;">
-          <video src="../images/videos/1_Real L vs Our simulated L.mp4"       controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
-          <video src="../images/videos/2_Real L vs COC simulated L.mp4"       controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
-          <video src="../images/videos/3_Real L vs DDDNet simulated  L.mp4"   controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
-          <video src="../images/videos/4_Real L vs L2R simulated  L.mp4"      controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
-          <video src="../images/videos/5_Real L vs Modeling simulated  L.mp4" controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="./images/videos/1_Real L vs Our simulated L.mp4"       controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="./images/videos/2_Real L vs COC simulated L.mp4"       controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="./images/videos/3_Real L vs DDDNet simulated  L.mp4"   controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="./images/videos/4_Real L vs L2R simulated  L.mp4"      controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
+          <video src="./images/videos/5_Real L vs Modeling simulated  L.mp4" controls style="width: 100%; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"></video>
       </div>
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         We provide comparison videos of real vs. simulated F/4 defocused left DP images at 0.5 m.<br>
@@ -376,7 +376,7 @@
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 5em;">
       <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of absolute depth estimation.</h3>
-      <img src="../images/e3.jpg" alt="Example 2 visualization" />
+      <img src="./images/e3.jpg" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         We evaluate DfDP models with CoC, L2R, Modeling, DDDNet, and our Sdirt on four casual scenes.
         Each result image includes a color bar indicating depth in meters.<br>
@@ -385,7 +385,7 @@
         (Best viewed in color and enlarged on screen.)
       </div>
       <br>
-      <img src="../images/e3_1.jpg" alt="Example 2 visualization" />
+      <img src="./images/e3_1.jpg" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         Evaluate DfDP models with L2R, Modeling, DDDNet, and our Sdirt on various DP119 dataset scenes.
         Each result image is decorated with a color bar indicating depth in meters.<br>
@@ -408,7 +408,7 @@
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
       <h4>Possible quad-pixel (QP) structure layout</h4>
       <div style="display: flex; gap: 20px; align-items: flex-start;">
-        <img src="../images/q-pd/m1.png" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <img src="./images/q-pd/m1.png" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
         <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
           <strong>(a)</strong> Tightly Packed Quad-Pixel Layout with four sub-pixels: Left-Top (LT), Left-Bottom (LB), Right-Top (RT), and Right-Bottom (RB).
           <br><br>
@@ -420,7 +420,7 @@
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
       <h4>Ray-traced QP PSFs</h4>
-      <img src="../images/q-pd/m2.png" alt="Example 2 visualization" />
+      <img src="./images/q-pd/m2.png" alt="Example 2 visualization" />
     </section>
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
@@ -428,15 +428,15 @@
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; font-family: sans-serif; text-align: center;">
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(a) Raw image</div>
-          <img src="../images/q-pd/raw.jpg" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/raw.jpg" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(b) Bayer pattern image</div>
-          <img src="../images/q-pd/bayer.jpg" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/bayer.jpg" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(c) Demosaic image</div>
-          <img src="../images/q-pd/demosaic.jpg" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/demosaic.jpg" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
       </div>
     </section>
@@ -446,29 +446,29 @@
       <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; font-family: sans-serif; text-align: center;">
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(a) LT image</div>
-          <img src="../images/q-pd/lt.png" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/lt.png" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(b) LB image</div>
-          <img src="../images/q-pd/lb.png" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/lb.png" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(c) RT image</div>
-          <img src="../images/q-pd/rt.png" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/rt.png" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(d) RB image</div>
-          <img src="../images/q-pd/rb.png" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/rb.png" alt="Layout C" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
       </div>
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; font-family: sans-serif; text-align: center;">
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(d) LT v.s. LB</div>
-          <img src="../images/q-pd/lt_vs_lb.gif" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/lt_vs_lb.gif" alt="Layout A" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
         <div>
           <div style="font-weight: bold; margin-bottom: 8px;">(e) LB v.s. RB</div>
-          <img src="../images/q-pd/lb_vs_rb.gif" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
+          <img src="./images/q-pd/lb_vs_rb.gif" alt="Layout B" style="width: 100%; border: 1px solid #ccc; border-radius: 8px;">
         </div>
       </div>
     </section>
