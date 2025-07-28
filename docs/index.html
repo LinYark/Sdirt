@@ -375,7 +375,7 @@
     </section>
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 5em;">
-      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative results of absolute depth estimation.</h3>
+      <h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Qualitative & quantitative results of absolute depth estimation.</h3>
       <img src="./images/e3.jpg" alt="Example 2 visualization" />
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
         We evaluate DfDP models with CoC, L2R, Modeling, DDDNet, and our Sdirt on four casual scenes.
@@ -393,7 +393,19 @@
         Our depth estimation results, however, demonstrate accuracy in both relative and absolute positions with minimal errors.<br>
         Furthermore, textureless areas lead to degradation in all models. (Best viewed in color and enlarged on screen.)
       </div>
+      <br>
+      <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <img src="./images/e3_2.jpeg" alt="DP Imaging Process" style="width: 50%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+        <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
+          We evaluate all models on DP119 using the following metrics to assess depth estimation performance: <br>
+          mean absolute error (MAE), mean squared error (MSE),
+          absolute relative error (Abs.r.), squared relative error (Sq.r.), accuracy with δ&nbsp;<&nbsp;1.25 (Acc-1), and δ&nbsp;<&nbsp;1.25² (Acc-2).  <br>
+          The DfDP model trained with our Sdirt achieves superior performance across most scenarios and evaluation metrics.
+          <br><br>
+        </div>
+      </div>
     </section>
+
 
     <!-- ################# -->
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
@@ -474,10 +486,9 @@
     </section>
 
     <section class="media-section" aria-label="Image examples" style="margin-bottom: 2em;">
-      <h4>A Personal Note</h4>
+      <h4>A personal discussion</h4>
       <div class="media-caption" style="font-size: 0.9em; margin-top: 1em; line-height: 1.6; background: #f9f9f9; padding: 1em;  border-radius: 4px;">
-      Dear readers:<br><br>
-      Optical simulation itself is not the hard part — the real obstacle lies in the lack of openness from camera, smartphone, lens, and sensor manufacturers regarding optical element specifications and ISP pipelines. <br>
+      I believe optical simulation itself is not the hard part — the real obstacle lies in the lack of openness from camera, smartphone, lens, and sensor manufacturers regarding optical element specifications and ISP pipelines. <br>
       If you are an industry insider with access to such parameters, and you need simulations to generate large-scale synthetic data or to verify component feasibility in advance — or if there is any way I can assist you — please feel free to contact me. <br>
       I also urgently need your support by providing real optical system data to help me build accurate simulators.<br><br>
       Thank you in advance,<br>
