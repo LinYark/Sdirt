@@ -35,18 +35,19 @@ Dual-Pixel (DP) images are valuable for depth estimation, but real DP-depth pair
   <img src="docs/images/m1.png" alt="Sdirt Overview" width="100%">
 </div>
 
-
-## 🚀  How to Use the Code
-To learn more usage about this codebase, kindly refer to [GET_START.md](./docs/GET_START.md).
-
-
 ## 🛠️ Code & Dataset Release Plan
 - [x] Paper available on arXiv with citation examples
 - [ ] Open-source Sdirt in stages:
   - [x] [Project pages](https://linyark.github.io/Sdirt)
-  - [ ] Dataset
+  - [x] Dataset
   - [ ] Full source code
-- [ ] Full code will be released **after the paper is officially published**
+
+## 📦 A New Test Set DP119
+[Google Drive](https://drive.google.com/file/d/1uFppWgOoDpJxw5Np1ndr3PmYbZqatOe-/view?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1R41pzEu01klKtvFDL1XeOA?pwd=echo)
+
+
+## 🚀  How to Use the Code
+Full code will be released **after the paper is officially published**.
 
 
 ## 📊 Results
