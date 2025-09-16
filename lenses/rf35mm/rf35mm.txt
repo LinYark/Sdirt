@@ -1,0 +1,5 @@
+https://www.photonstophotos.net/GeneralTopics/Lenses/OpticalBench/OpticalBench.htm#Data/US20190113711_Example01P.txt,figureOpacity=0.25,AxisO,OffAxis
+
+f1.8 = 10.08
+f4.0 = 4.45 
+f4.0fix = 4.80

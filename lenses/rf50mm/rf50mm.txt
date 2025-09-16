@@ -1,0 +1,6 @@
+https://www.photonstophotos.net/GeneralTopics/Lenses/OpticalBench/OpticalBench.htm#Data/US20210263286_Example01P.txt,figureOpacity=0.25,AxisO,OffAxis
+
+8.0 = f1.8
+5.690 = f2.8
+3.650 = f4.0
+2.850 = f5.6

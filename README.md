@@ -21,7 +21,7 @@
       📦 Dataset
     </a> &nbsp;&nbsp;|&nbsp;&nbsp; -->
     <a href="https://linyark.github.io/Sdirt" target="_blank" rel="noopener noreferrer">
-      🔗 Project
+      🔗 Website
     </a>
   </p>
 </div>
@@ -35,19 +35,61 @@ Dual-Pixel (DP) images are valuable for depth estimation, but real DP-depth pair
   <img src="docs/images/m1.png" alt="Sdirt Overview" width="100%">
 </div>
 
-## 🛠️ Code & Dataset Release Plan
-- [x] Paper available on arXiv with citation examples
-- [ ] Open-source Sdirt in stages:
-  - [x] [Project pages](https://linyark.github.io/Sdirt)
-  - [x] Dataset
-  - [ ] Full source code
 
 ## 📦 A New Test Set DP119
 [Google Drive](https://drive.google.com/file/d/1uFppWgOoDpJxw5Np1ndr3PmYbZqatOe-/view?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1R41pzEu01klKtvFDL1XeOA?pwd=echo)
 
+We collected a real Dual-Pixel and depth paired test set with an open lens structure and fixed focus, featuring diverse real-world scenes, which are not available in any other existing dataset (202506).    
+(a) planar scenes. (b) boxs scenes. (c) casual scenes.
+
+<p align="center">
+  <img src="docs/images/s5.jpg" alt="Depth Estimation (Quantitative)" width="90%">
+</p>
 
 ## 🚀  How to Use the Code
-Full code will be released **after the paper is officially published**.
+##### Prepare your python envs
+```bash
+# python == 3.9
+# numpy == 1.26.0
+# pytorch == 1.12.1
+```
+
+##### Train a Dual-Pixel PSFNet for a camera
+
+```bash
+# input: (x, y, z), output: PSF at (x, y, z) when the lens is focused to foc_dist
+python 1_fit_psfnet.py
+```
+
+##### Simulate photos with the same aberration, defocus, and phase as capture
+Sample data are provided for evaluation. Simulate F/4 imgs and depth est on samples.
+```bash
+python 2_dfdp_net.py
+```
+
+Download DP119 for full test set evaluation.
+```bash
+# 1. Download the DP119
+# 2. Disable the code for "Only test on sample real_set of DP119"
+# 3. ↓
+python 2_dfdp_net.py
+```
+
+Train a Depth-from-Dual-Pixel network.
+```bash
+# 1. Download the training set
+#    NYUv2: Available at https://github.com/JunjH/Revisiting_Single_Depth_Estimation
+#    FlyingThings3D_FS: Available at https://github.com/albert100121/AiFDepthNet
+# 2. Disable the code for "Only test on sample real_set of DP119"
+# 3. Disable the code for "Only test on full real_set DP119"
+# 4. ↓
+python 2_dfdp_net.py
+```
+
+
+##### Try to reproduce?
+
+All DfDP models share the same depth estimation network architecture, initialize from a common CoC pre-trained checkpoint, so plz train a CoC DfDP model first as your pre-trained checkpoint. 
 
 
 ## 📊 Results
@@ -86,14 +128,17 @@ If you find it useful, please consider citing our paper:
 ```
 
 ## Acknowledgments
-This work was supported by National Natural Science Foundation of China (Grant No. 32471146) and the project N20240194.
-The authors thank Echossom, Miya, and Xinge for valuable discussions and assistance.
+This work was supported by National Natural Science Foundation of China (Grant No. 32471146) and the project N20240194. The authors thank Echossom, Miya, and [Xinge](https://singer-yang.github.io/) for valuable discussions and assistance.
 
 ---
+## Lastly
+If you are also interested in exploring structural parameters of dual-pixel sensors from other cameras, or in conducting further optical simulations on quad-pixel structures, you are always welcome to contact [me](https://github.com/LinYark).
+
 🤔 Btw, I am seeking help from any engineer familiar with Dual/Quad-Pixel sensors. (⚡plz contact [me](https://github.com/LinYark), crying⚡).
-<p align="right">
+
+<!-- <p align="right">
   <a href="https://github.com/LinYark/Sdirt">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=LinYark.Sdirt" alt="visitors"/>
   </a>
-</p>
+</p> -->
 <!-- [![visitors](https://visitor-badge.laobi.icu/badge?page_id=LinYark.Sdirt)](https://github.com/LinYark/Sdirt) -->

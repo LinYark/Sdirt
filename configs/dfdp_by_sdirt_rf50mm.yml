@@ -1,0 +1,39 @@
+DEBUG: True
+EXP_NAME: 'Sdirt'
+pred_name: 'depth'
+
+train:
+  lens: './lenses/rf50mm/lens_web.json'
+  psfnet_path: './ckpt/rf50mm/F4_PSFNet_mlp.pkl'
+  dataset: 'NYUdata'
+  dfdpnet_pretrained: './ckpt/rf50mm/Sdirt_best_acc1.pkl'
+
+test:
+  lens: './lenses/rf50mm/lens_web.json'
+  psfnet_path: './ckpt/rf50mm/F4_PSFNet_mlp.pkl' 
+  dataset: 'FlyingThings3D'
+
+# Input focal stack [B, S, C, H, W]
+bs: 4 # batch size
+n_stack: 1  # focal stack size
+res: !!python/tuple [512, 768]  # input image resolution
+
+ks: 21 # PSF kernel size
+lr: 1e-4  # DFDP network learning rate
+epochs: 100  # DFDP network training epochs
+
+# train
+NYUdata_train: '/home/[***]/NYU2_DATA/nyu2_train'
+Middlebury_FS: '/home/[***]/Middlebury_FS/focal_stack'
+
+FlyingThings3D_train: '/home/[***]/FlyingThings3D_FS/train/focal_stack'
+FlyingThings3D_test: '/home/[***]/FlyingThings3D_FS/val/focal_stack'
+
+# test
+real_box_test: "/home/[***]/DP119/box/rgbd"
+real_flat_test: "/home/[***]/DP119/flat/"
+real_casual_test: "/home/[***]/DP119/casual/"
+real_box_sample: "./real_sample_set/box"
+real_flat_sample: "./real_sample_set/flat"
+real_casual_sample: "./real_sample_set/casual"
+
