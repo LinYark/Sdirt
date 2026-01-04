@@ -39,8 +39,9 @@ Dual-Pixel (DP) images are valuable for depth estimation, but real DP-depth pair
 ## 📦 A New Test Set DP119
 [Google Drive](https://drive.google.com/file/d/1uFppWgOoDpJxw5Np1ndr3PmYbZqatOe-/view?usp=sharing) | [Baidu Drive](https://pan.baidu.com/s/1R41pzEu01klKtvFDL1XeOA?pwd=echo)
 
-We collected a real Dual-Pixel and depth paired test set with an open lens structure and fixed focus, featuring diverse real-world scenes, which are not available in any other existing dataset (202506).    
-(a) planar scenes. (b) boxs scenes. (c) casual scenes.
+We collected a real Dual-Pixel and depth paired test set with an open lens structure (Canon RF50MM + R6M2) and fixed focus (Focus dis = 1m, FN = 4), featuring diverse real-world scenes, which are not available in any other existing dataset (202506).
+The specific data were extracted using [Digital Photo Professional 4](https://www.canon.com.cn/supports/download/simsdetail/0200751305.html), and the extraction process is same as the GIF provided by [Abdullah](https://github.com/Abdullah-Abuolaim/defocus-deblurring-dual-pixel).
+Examples are as follows: (a) planar scenes. (b) boxs scenes. (c) casual scenes. 
 
 <p align="center">
   <img src="docs/images/s5.jpg" alt="Depth Estimation (Quantitative)" width="90%">
