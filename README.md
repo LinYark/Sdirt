@@ -120,10 +120,11 @@ All DfDP models share the same depth estimation network architecture, initialize
 We appreciate a star ⭐ if you'd like to follow future updates.
 If you find it useful, please consider citing our paper:
 ```bibtex
-@article{he2025simulating,
+@inproceedings{he2025simulating,
   title={Simulating Dual-Pixel Images From Ray Tracing For Depth Estimation},
   author={He, Fengchen and Zhao, Dayang and Xu, Hao and Quan, Tingwei and Zeng, Shaoqun},
-  journal={arXiv preprint arXiv:2503.11213},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={26106--26115},
   year={2025}
 }
 ```
